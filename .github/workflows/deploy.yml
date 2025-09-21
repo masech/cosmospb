@@ -1,0 +1,28 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  job1:
+    name: deploy
+    runs-on: ubuntu-22.04
+    steps:
+      - name: install ssh keys
+        # check this thread to understand why its needed:
+        # <https://stackoverflow.com/a/70447517>
+        run: |
+          install -m 600 -D /dev/null ~/.ssh/id_rsa
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
+      - name: connect, pull and build
+        run: |
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} \
+            "set +o history \
+            && cd cosmospb \
+            && git pull https://${{secrets.REPO_USER}}:${{ secrets.PAT }}@github.com/masech/cosmospb.git \
+            && set -o history \
+            && bundle exec jekyll build \
+            && exit"
