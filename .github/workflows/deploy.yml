@@ -22,7 +22,7 @@ jobs:
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} \
             "set +o history \
             && cd cosmospb \
-            && git pull https://${{secrets.REPO_USER}}:${{ secrets.PAT }}@github.com/masech/cosmospb.git \
+            && git pull https://${{ secrets.REPO_USER }}:${{ secrets.PAT }}@github.com/masech/cosmospb.git \
             && set -o history \
-            && bundle exec jekyll build \
+            && /home/${{secrets.REPO_USER}}/gems/bin/bundle exec jekyll build \
             && exit"
