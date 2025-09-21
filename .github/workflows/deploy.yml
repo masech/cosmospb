@@ -24,5 +24,6 @@ jobs:
             && cd cosmospb \
             && git pull https://${{ secrets.REPO_USER }}:${{ secrets.PAT }}@github.com/masech/cosmospb.git \
             && set -o history \
-            && /home/${{secrets.REPO_USER}}/gems/bin/bundle exec jekyll build \
+            && ls -la
+            && ../gems/bin/bundle exec jekyll build \
             && exit"
