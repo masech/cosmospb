@@ -24,6 +24,7 @@ jobs:
             && cd cosmospb \
             && git pull https://${{ secrets.REPO_USER }}:${{ secrets.PAT }}@github.com/masech/cosmospb.git \
             && set -o history \
-            && pwd \
+            && ../gems/bin/bundle install \
+            && ../gems/bin/bundle list \
             && ../gems/bin/bundle exec jekyll build \
             && exit"
