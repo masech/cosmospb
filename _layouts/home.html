@@ -9,7 +9,6 @@ layout: default
   {%- endif -%} 
 
     <ul class="post-list">
-      <!-- This loops through the paginated posts -->
       {%- for post in paginator.posts -%}
       <li>
         <h3>
@@ -26,7 +25,6 @@ layout: default
       {%- endfor -%}
     </ul>
 
-    <!-- Pagination links -->
     <div class="pagination">
       {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path }}" class="previous">
