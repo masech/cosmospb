@@ -21,14 +21,13 @@
 paginate: 12
 lang: ru
 #permalink: /posts/:year/:month/:day/:title:output_ext
-title: КOСМО СПб
-email: notify-cosmospb@mail.ru
+title: КOСМО.ОРГ.РФ
+email: notify-cosmo@mail.ru
 description: >- # this means to ignore newlines until "baseurl:"
-  Сайт посвящен космической тематике и местам города Санкт-Петербурга,
-  связанным с изучением космоса. Здесь вы найдете статьи о достижениях
-  космонавтики и астрономии.
+  Сайт посвящен космической тематике и местам страны, связанным с изучением космоса.
+  Здесь вы найдете последние новости, ссылки и статьи о достижениях космонавтики и астрономии.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://cosmo.spb.ru" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://xn--j1aefbn.xn--c1avg.xn--p1ai" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
 

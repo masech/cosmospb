@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Обсерватория
+title: Обсерватории
 permalink: /observatory/
 ---
 
