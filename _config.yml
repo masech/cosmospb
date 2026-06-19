@@ -22,10 +22,11 @@ paginate: 12
 lang: ru
 #permalink: /posts/:year/:month/:day/:title:output_ext
 title: КOСМО.ОРГ.РФ
+author: © 2026, КOСМО.ОРГ.РФ 
 email: notify-cosmo@mail.ru
 description: >- # this means to ignore newlines until "baseurl:"
   Сайт посвящен космической тематике и местам страны, связанным с изучением космоса.
-  Здесь вы найдете последние новости, ссылки и статьи о достижениях космонавтики и астрономии.
+  Здесь вы найдете статьи и ссылки о достижениях космонавтики и астрономии.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://xn--j1aefbn.xn--c1avg.xn--p1ai" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
